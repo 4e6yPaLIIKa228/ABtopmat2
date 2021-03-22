@@ -1,0 +1,24 @@
+﻿<Window x:Class="ABtomat.windows.Select"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ABtomat.windows"
+        mc:Ignorable="d"
+        Title="Select" Height="610.5" Width="534.5" WindowStyle="None" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid Background="#FFBDB7B7">
+        <Button x:Name="Bt_Tyt" Content="" HorizontalAlignment="Left" Height="160" Margin="45,142,0,0" VerticalAlignment="Top" Width="182" RenderTransformOrigin="0.484,0.538" Style="{DynamicResource ButtonKFC1}" Click="Bt_Tyt_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="/ABtomat;component/image/5101498.jpg"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="Bt_Home" Content="" HorizontalAlignment="Left" Height="160" Margin="330,142,0,0" VerticalAlignment="Top" Width="182" BorderBrush="White" Style="{DynamicResource ButtonKFC2}" Click="Bt_Home_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="/ABtomat;component/image/1909-425-1361.jpg"/>
+            </Button.Background>
+        </Button>
+        <Label Content="Здесь" HorizontalAlignment="Left" Height="57" Margin="45,355,0,0" VerticalAlignment="Top" Width="182" FontSize="36" FontFamily="Garamond"/>
+        <Label Content="С собой" HorizontalAlignment="Left" Height="57" Margin="330,355,0,0" VerticalAlignment="Top" Width="182" FontSize="36" FontFamily="Garamond"/>
+
+    </Grid>
+</Window>

@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7FED6DC4-7D70-4292-A8C2-19E822D66161}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ABtomat</RootNamespace>
+    <AssemblyName>ABtomat</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="windows\Menu.xaml.cs">
+      <DependentUpon>Menu.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="windows\Select.xaml.cs">
+      <DependentUpon>Select.xaml</DependentUpon>
+    </Compile>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="windows\Menu.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="windows\Select.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="image\1-41.jpg" />
+    <Resource Include="image\i.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="image\11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="image\teremok-obed-169rub.jpg" />
+    <Resource Include="image\vse_chto_vy_lyubite_za.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="image\37_background_ru_ru.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="image\1909-425-1361.jpg" />
+    <Resource Include="image\5101498.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="image\scale_1200.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="image\mcdonalds-quarter-pounder-cheeseburger-hamburger-restaurant-cheeseburger-png-1500_1085.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="image\kisspng-hamburger-fast-food-cheeseburger-recipe-burguer-5ac3046abebd79.5861960115227300907813.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="image\Landing_CaseHeaderImages_1920_McDonaldsY.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="image\i2312.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="image\product_1240_477354502.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="image\i %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="image\9e96edc05a15479db437e164ad0ab649.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="image\blin.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="image\scale_1200 %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="image\1c9de5dd-9faa-4d08-bcc0-b324136ee549.jpg" />
+    <Resource Include="image\bed6f331014615.5703efc6701fb.jpg" />
+    <Resource Include="image\i %282%29.jpg" />
+    <Resource Include="image\kisspng-the-coca-cola-company-fizzy-drinks-mcdonald-s-big-coke-really-does-taste-better-at-mcdonalds-and-5b7f719b0d7290.8444860015350788110551.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="image\Печать__13.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="image\LA1ZyKDksNg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="image\bd1f0d24944e406496516cdca9650f62.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
